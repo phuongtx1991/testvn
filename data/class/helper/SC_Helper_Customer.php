@@ -540,6 +540,13 @@ class SC_Helper_Customer {
         $objFormParam->addParam('save_down_file', 'save_down_file', '', '', array());
     }
 
+    public function sfCustomerResumeParam(&$objFormParam) {
+        $objFormParam->addParam('Tên tệp lịch sử công việc tải xuống', 'resume', MTEXT_LEN, 'KVa', array('SPTAB_CHECK', 'MAX_LENGTH_CHECK'));
+        $objFormParam->addParam('Tên tệp lịch sử công việc tải xuống', 'resume_name');
+        $objFormParam->addParam('temp_resume_file', 'temp_resume_file', '', '', array());
+        $objFormParam->addParam('save_resume_file', 'save_resume_file', '', '', array());
+    }
+
     /**
      * 会員登録エラーチェック
      * @param SC_FormParam $objFormParam SC_FormParam インスタンス

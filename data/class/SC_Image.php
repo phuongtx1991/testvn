@@ -52,14 +52,14 @@ class SC_Image {
         if (file_exists($from_path) && file_exists($save_dir)) {
             if (copy($from_path, $to_path)) {
                 /* copy to another site which is different by language too */
-                $another_path = '';
-                if (strpos($save_dir, 'testvn') !== false)
-                    $another_path = str_replace("testvn", "testjp", $to_path);
-                else if (strpos($save_dir, 'testjp') !== false)
-                    $another_path = str_replace("testjp", "testvn", $to_path);
-
-                if ($another_path != '')
-                    copy($from_path, $another_path);
+//                $another_path = '';
+//                if (strpos($save_dir, 'testvn') !== false)
+//                    $another_path = str_replace("testvn", "testjp", $to_path);
+//                else if (strpos($save_dir, 'testjp') !== false)
+//                    $another_path = str_replace("testjp", "testvn", $to_path);
+//
+//                if ($another_path != '')
+//                    copy($from_path, $another_path);
 
                 unlink($from_path);
             }

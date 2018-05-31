@@ -181,10 +181,16 @@ define('PLUGIN_LOG_REALFILE', DATA_REALDIR . "logs/plugin.log");
 define('IMAGE_TEMP_REALDIR', HTML_REALDIR . "upload/temp_image/");
 /** 画像保存先 */
 define('IMAGE_SAVE_REALDIR', HTML_REALDIR . "upload/save_image/");
+/** 画像保存先 */
+define('IMAGE_SAVE_DIR_COMMON', HTML_REALDIR . "../../hyperion-job_save/save_avatar/");
 /** 画像一時保存URL */
 define('IMAGE_TEMP_URLPATH', ROOT_URLPATH . "upload/temp_image/");
+/** 画像一時保存URL */
+define('IMAGE_TEMP_URLPATH_COMMON', HTML_REALDIR . "../../hyperion-job_save/temp/");
 /** 画像保存先URL */
 define('IMAGE_SAVE_URLPATH', ROOT_URLPATH . "upload/save_image/");
+/** 画像保存先URL */
+define('IMAGE_SAVE_URLPATH_COMMON', ROOT_URLPATH . "../hyperion-job_save/save_avatar/");
 /** RSS用画像一時保存URL */
 define('IMAGE_TEMP_RSS_URL', HTTP_URL . "upload/temp_image/");
 /** RSS用画像保存先URL */
@@ -414,8 +420,12 @@ define('DOWN_SIZE', 50000);
 define('DEFAULT_PRODUCT_DOWN', 1);
 /** ダウンロードファイル一時保存 */
 define('DOWN_TEMP_REALDIR', DATA_REALDIR . "download/temp/");
+/** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
+define('DOWN_TEMP_DIR_COMMON', HTML_REALDIR . "../../hyperion-job_save/temp/");
 /** ダウンロードファイル保存先 */
 define('DOWN_SAVE_REALDIR', DATA_REALDIR . "download/save/");
+/** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
+define('DOWN_SAVE_DIR_COMMON', HTML_REALDIR . "../../hyperion-job_save/save_cv/");
 /** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
 define('DOWNLOAD_BLOCK', 1024);
 /** 新規注文 */

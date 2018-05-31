@@ -195,6 +195,14 @@ class SC_UploadFile
         }
     }
 
+    public function deleteTempFile($tempFileName)
+    {
+        if(file_exists($this->temp_dir.$tempFileName))
+        {
+            unlink($this->temp_dir.$tempFileName);
+        }
+    }
+
     // 画像を削除する。
     public function deleteKikakuFile($keyname)
     {
@@ -424,13 +432,13 @@ class SC_UploadFile
     }
 
     // DBで保存されたダウンロードファイル名をセットする
-    public function setDBDownFile($arrVal)
+    public function setDBDownFile($arrVal,$fileType = 'cv')
     {
         if (isset($arrVal['down_realfilename']) && $arrVal['down_realfilename'] != '') {
             $this->save_file[0] = $arrVal['down_realfilename'];
         }
-        if (isset($arrVal['cv']) && $arrVal['cv'] != '') {
-            $this->save_file[0] = $arrVal['cv'];
+        if (isset($arrVal[$fileType]) && $arrVal[$fileType] != '') {
+            $this->save_file[0] = $arrVal[$fileType];
         }
     }
 
