@@ -92,9 +92,9 @@ define('SITE_FRAME', "site_frame.tpl");
 /** 認証文字列 */
 define('CERT_STRING', "7WDhcBTF");
 /** 生年月日登録開始年 */
-define('BIRTH_YEAR', 1901);
+define('BIRTH_YEAR', 1975);
 /** 本システムの稼働開始年 */
-define('RELEASE_YEAR', 2005);
+define('RELEASE_YEAR', 2000);
 /** クレジットカードの期限＋何年 */
 define('CREDIT_ADD_YEAR', 10);
 /** ポイントの計算ルール(1:四捨五入、2:切り捨て、3:切り上げ) */
@@ -158,7 +158,7 @@ define('ERR_COLOR', "#ffe8e8");
 /** 親カテゴリ表示文字 */
 define('CATEGORY_HEAD', ">");
 /** 生年月日初期選択年 */
-define('START_BIRTH_YEAR', 1970);
+define('START_BIRTH_YEAR', 1975);
 /** 価格名称 */
 define('NORMAL_PRICE_TITLE', "通常価格");
 /** 価格名称 */
@@ -181,10 +181,16 @@ define('PLUGIN_LOG_REALFILE', DATA_REALDIR . "logs/plugin.log");
 define('IMAGE_TEMP_REALDIR', HTML_REALDIR . "upload/temp_image/");
 /** 画像保存先 */
 define('IMAGE_SAVE_REALDIR', HTML_REALDIR . "upload/save_image/");
+/** 画像保存先 */
+define('IMAGE_SAVE_DIR_COMMON', HTML_REALDIR . "../../hyperion-job_save/save_avatar/");
 /** 画像一時保存URL */
 define('IMAGE_TEMP_URLPATH', ROOT_URLPATH . "upload/temp_image/");
+/** 画像一時保存URL */
+define('IMAGE_TEMP_URLPATH_COMMON', HTML_REALDIR . "../../hyperion-job_save/temp/");
 /** 画像保存先URL */
 define('IMAGE_SAVE_URLPATH', ROOT_URLPATH . "upload/save_image/");
+/** 画像保存先URL */
+define('IMAGE_SAVE_URLPATH_COMMON', ROOT_URLPATH . "../hyperion-job_save/save_avatar/");
 /** RSS用画像一時保存URL */
 define('IMAGE_TEMP_RSS_URL', HTTP_URL . "upload/temp_image/");
 /** RSS用画像保存先URL */
@@ -241,7 +247,7 @@ define('ID_MAX_LEN', STEXT_LEN);
 /** 管理画面用：ID・パスワードの最小文字数 */
 define('ID_MIN_LEN', 4);
 /** 金額桁数 */
-define('PRICE_LEN', 8);
+define('PRICE_LEN', 12);
 /** 率桁数 */
 define('PERCENTAGE_LEN', 3);
 /** 在庫数、販売制限数 */
@@ -311,7 +317,7 @@ define('REVIEW_ALLOW_URL', 0);
 /** アップデート時にサイト情報を送出するか */
 define('UPDATE_SEND_SITE_INFO', false);
 /** ポイントを利用するか(true:利用する、false:利用しない) (false は一部対応) */
-define('USE_POINT', true);
+define('USE_POINT', false);
 /** 在庫無し商品の非表示(true:非表示、false:表示) */
 define('NOSTOCK_HIDDEN', false);
 /** モバイルサイトを利用するか(true:利用する、false:利用しない) (false は一部対応) (*モジュールで使用) */
@@ -407,15 +413,19 @@ define('PLUGIN_HTML_URLPATH', ROOT_URLPATH . "plugin/");
 /** 日数桁数 */
 define('DOWNLOAD_DAYS_LEN', 3);
 /** ダウンロードファイル登録可能拡張子(カンマ区切り) */
-define('DOWNLOAD_EXTENSION', "zip,lzh,jpg,jpeg,gif,png,mp3,pdf,csv");
+define('DOWNLOAD_EXTENSION', "doc,docx,xls,xlsx,pdf");
 /** ダウンロード販売ファイル用サイズ制限(KB) */
 define('DOWN_SIZE', 50000);
 /** 1:実商品 2:ダウンロード */
 define('DEFAULT_PRODUCT_DOWN', 1);
 /** ダウンロードファイル一時保存 */
 define('DOWN_TEMP_REALDIR', DATA_REALDIR . "download/temp/");
+/** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
+define('DOWN_TEMP_DIR_COMMON', HTML_REALDIR . "../../hyperion-job_save/temp/");
 /** ダウンロードファイル保存先 */
 define('DOWN_SAVE_REALDIR', DATA_REALDIR . "download/save/");
+/** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
+define('DOWN_SAVE_DIR_COMMON', HTML_REALDIR . "../../hyperion-job_save/save_cv/");
 /** ダウンロード販売機能 ダウンロードファイル読み込みバイト(KB) */
 define('DOWNLOAD_BLOCK', 1024);
 /** 新規注文 */
