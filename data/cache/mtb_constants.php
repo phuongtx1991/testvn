@@ -92,9 +92,9 @@ define('SITE_FRAME', "site_frame.tpl");
 /** 認証文字列 */
 define('CERT_STRING', "7WDhcBTF");
 /** 生年月日登録開始年 */
-define('BIRTH_YEAR', 1975);
+define('BIRTH_YEAR', 1901);
 /** 本システムの稼働開始年 */
-define('RELEASE_YEAR', 2000);
+define('RELEASE_YEAR', 2005);
 /** クレジットカードの期限＋何年 */
 define('CREDIT_ADD_YEAR', 10);
 /** ポイントの計算ルール(1:四捨五入、2:切り捨て、3:切り上げ) */
@@ -158,7 +158,7 @@ define('ERR_COLOR', "#ffe8e8");
 /** 親カテゴリ表示文字 */
 define('CATEGORY_HEAD', ">");
 /** 生年月日初期選択年 */
-define('START_BIRTH_YEAR', 1975);
+define('START_BIRTH_YEAR', 1970);
 /** 価格名称 */
 define('NORMAL_PRICE_TITLE', "通常価格");
 /** 価格名称 */
@@ -247,7 +247,7 @@ define('ID_MAX_LEN', STEXT_LEN);
 /** 管理画面用：ID・パスワードの最小文字数 */
 define('ID_MIN_LEN', 4);
 /** 金額桁数 */
-define('PRICE_LEN', 12);
+define('PRICE_LEN', 8);
 /** 率桁数 */
 define('PERCENTAGE_LEN', 3);
 /** 在庫数、販売制限数 */
@@ -317,7 +317,7 @@ define('REVIEW_ALLOW_URL', 0);
 /** アップデート時にサイト情報を送出するか */
 define('UPDATE_SEND_SITE_INFO', false);
 /** ポイントを利用するか(true:利用する、false:利用しない) (false は一部対応) */
-define('USE_POINT', false);
+define('USE_POINT', true);
 /** 在庫無し商品の非表示(true:非表示、false:表示) */
 define('NOSTOCK_HIDDEN', false);
 /** モバイルサイトを利用するか(true:利用する、false:利用しない) (false は一部対応) (*モジュールで使用) */
@@ -496,4 +496,3 @@ define('PENDING_ORDER_CANCEL_TIME', 900);
 define('PENDING_ORDER_CANCEL_FLAG', true);
 /** API機能を有効にする(true:する false:しない) */
 define('API_ENABLE_FLAG', false);
-
