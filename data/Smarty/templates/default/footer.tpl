@@ -27,13 +27,15 @@
         <div id="footer" class="clearfix">
             <div class="table">
                 <div class="table_cell">
-                    <p class="footer_title">Địa chỉ</p>
+                    <p class="footer_title">Địa chỉ tại Việt Nam</p>
                     <p>Phòng 319, tầng 3, tòa nhà UDIC Complex<br />Hoàng Đạo Thúy, phường Trung Hòa,<br />quận Cầu Giấy, thành phố Hà Nội.</p>
+                    <p class="footer_title" style="margin-top: 5px">Địa chỉ tại Nhật Bản </p>
+                    <p>Tầng 6, daiichi Seimei building, <br />nichi ikebukuro, 2-40-12 ikebukuro,<br />Toshima ku, Tokyo.</p>
                 </div>
                 <div class="table_cell">
                     <p class="footer_title">Liên hệ</p>
-                    <p>Email: <a href='mailto:<!--{$arrSiteInfo.email02|h}-->'><!--{$arrSiteInfo.email02|h}--></a></p>
-                    <p style="margin-top: 8px;">Số điện thoại : 090-229-7658</p>
+                    <p>Email: VN: <a href='mailto:<!--{$arrSiteInfo.email02|h}-->'><!--{$arrSiteInfo.email02|h}--></a> - JP: <a href='mailto:<!--{$arrSiteInfo.email04|h}-->'><!--{$arrSiteInfo.email04|h}--></a></p>
+                    <p style="margin-top: 8px;">Số điện thoại : VN: 090-229-7658 - JP: 03-5957-3475</p>
                     <p style="margin-top: 4px;">Mạng xã hội: &nbsp;<a href="https://www.facebook.com/hyperionjobvn/" target="_blank"><img src="<!--{$TPL_URLPATH}-->img/icon/icon_fb.png" alt="Facebook" /></a> <a href="https://www.youtube.com/" target="_blank"><img src="<!--{$TPL_URLPATH}-->img/icon/icon_youtube.png" alt="Youtube" /></a></p>
                 </div>
             </div>
