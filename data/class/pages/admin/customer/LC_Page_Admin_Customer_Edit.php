@@ -122,12 +122,12 @@ class LC_Page_Admin_Customer_Edit extends LC_Page_Admin_Ex
 
         // create file cv info
         $objCvFile = new SC_UploadFile_Ex(DOWN_TEMP_DIR_COMMON, DOWN_SAVE_DIR_COMMON);
-        $objCvFile->addFile('Tệp hồ sơ', 'down_file', explode(',', DOWNLOAD_EXTENSION), DOWN_SIZE, true, 0, 0);
+        $objCvFile->addFile(' tệp hồ sơ', 'down_file', explode(',', DOWNLOAD_EXTENSION), DOWN_SIZE, true, 0, 0);
         $objCvFile->setHiddenFileList($_POST);
 
         // create file resume info
         $objResumeFile = new SC_UploadFile_Ex(DOWN_TEMP_DIR_COMMON, DOWN_SAVE_DIR_COMMON);
-        $objResumeFile->addFile('Tệp hồ sơ', 'resume_file', explode(',', DOWNLOAD_EXTENSION), DOWN_SIZE, true, 0, 0);
+        $objResumeFile->addFile(' tệp hồ sơ', 'resume_file', explode(',', DOWNLOAD_EXTENSION), DOWN_SIZE, true, 0, 0);
         $objResumeFile->setHiddenFileList($_POST);
 
         // モードによる処理切り替え
