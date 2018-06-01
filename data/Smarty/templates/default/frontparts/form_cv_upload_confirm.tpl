@@ -29,10 +29,20 @@
     <tr>
         <th>Tệp hồ sơ</th>
         <td>
-            <!--{if $arrForm.cv != ""}-->
-                <!--{$arrForm.cv_name|h}-->
-            <!--{/if}-->
+            <p>
+                Hồ sơ đính kèm :
+                <!--{if $arrForm.cv != ""}-->
+                 <!--{$arrForm.cv_name|h}-->
+                <!--{/if}-->
+            </p>
+            <p>
+                Lịch sử làm việc :
+                <!--{if $arrForm.resume != ""}-->
+                <!--{$arrForm.resume_name|h}-->
+                <!--{/if}-->
+            </p>
         </td>
+
     </tr>
 </table>
 <!--{/strip}-->
